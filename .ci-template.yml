@@ -1,0 +1,14 @@
+stages: 
+  - build
+  - test
+  - deploy
+
+build-job: 
+  stage: build
+  script: 
+    - echo "building if nessitary"
+    - npm build 
+
+test-job: 
+  stage:
+  -  docker build pa11y-docker -t accessability-test

@@ -1,0 +1,10 @@
+FROM node:24-alpine
+
+
+RUN npm install -g pa11y
+COPY . .
+
+ 
+#WORKDIR $DIR
+
+# mount files from the repo in the dockerfile
