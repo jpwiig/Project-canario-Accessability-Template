@@ -1,0 +1,20 @@
+stages: 
+  - build
+  - test
+  - deploy
+
+build-job: 
+  stage: build
+  script: 
+    - echo "building if nessitary"
+    - npm build 
+
+test-job: 
+  stage: test
+  script:
+  - ./accessabilitify-testing.sh
+
+deploy-job: 
+  stage: deploy
+  script: 
+    - echo "staging to deploy"

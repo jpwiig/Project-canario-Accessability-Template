@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "pa11y": "^9.0.1",
+    "pa11y-reporter-html": "^2.0.0"
+  }
+}
