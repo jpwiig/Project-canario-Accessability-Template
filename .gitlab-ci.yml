@@ -12,7 +12,7 @@ build-job:
 test-job: 
   stage: test
   script:
-  - ./accessabilitify-testing.sh
+  - ./accessabilitify-testing.sh test.html
 
 deploy-job: 
   stage: deploy
