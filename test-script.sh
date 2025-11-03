@@ -4,8 +4,9 @@ failed=0
 step=1
 URL=$1
 THRESHOLD=$2
+tag=$CI_PIPELINE_ID
 
-test=$(docker run /bin/bash -c "./accessabilitiy-testing.sh $URL $THRESHOLD")
+test=$(docker run pa11y:$tag /bin/bash -c "./accessabilitiy-testing.sh $URL $THRESHOLD")
 
 if [[ $test -eq 0 ]]; then
     echo -e "\e[32m accessability test is a success!\e[0m" 
