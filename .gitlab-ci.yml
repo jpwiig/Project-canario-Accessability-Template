@@ -16,7 +16,7 @@ test-job:
   #services: docker:19.03.5-dind
   script:
   - docker build -t pa11y:$CI_PIPELINE_ID . 
-  - ./test-script.sh nrk.no #needs to be changed to the expected outcome of the build thing
+  - ./test-script.sh cv.jpwiig.dev #needs to be changed to the expected outcome of the build thing
 
 
 #deploy-job: 
