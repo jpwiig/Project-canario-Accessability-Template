@@ -4,7 +4,7 @@ failed=0
 step=1
 URL=$1
 THRESHOLD=$2
-tag=latest
+tag=$CI_PIPELINE_ID
 
 test=$(docker run pa11y:$tag /bin/bash -c -x "./accessabilitiy-testing.sh $URL $THRESHOLD")
 echo $test
