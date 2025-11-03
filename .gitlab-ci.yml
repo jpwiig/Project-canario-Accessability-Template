@@ -1,14 +1,13 @@
 stages: 
-  - build
   - test
-  - deploy
 
-build-job: 
-  stage: build
-  image: node:latest
-  script: 
-    - echo "building if nessitary"
-    - npm build 
+
+#build-job: 
+#  stage: build
+#  image: node:latest
+#  script: 
+#    - echo "building if nessitary"
+#    - npm build 
 
 test-job: 
   stage: test
@@ -23,4 +22,4 @@ deploy-job:
   stage: deploy
   script: 
     - echo "staging to deploy"
-    - echo "lmao this needs to be in another repo"
+    - echo "this needs to be in another repo"
