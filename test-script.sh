@@ -2,7 +2,7 @@
 
 failed=0
 step=1
-URL=$1
+URL=oslomet.no
 THRESHOLD=$2
 
 test=$(./accessabilitiy-testing.sh "$URL" "$THRESHOLD")
