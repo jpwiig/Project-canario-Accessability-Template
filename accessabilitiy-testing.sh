@@ -9,11 +9,11 @@
  threshold=$2
 
  if [[ -z "$filePath" ]]; then
- echo "fill out the file"
+ #echo "fill out the file"
  fi
 
  if [[ -z "$threshold" ]]; then
- echo "running with standard threshold of 5"
+ #echo "running with standard threshold of 5"
  threshold=5
  fi
 

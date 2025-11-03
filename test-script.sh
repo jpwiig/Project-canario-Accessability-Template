@@ -5,7 +5,7 @@ step=1
 URL=$1
 THRESHOLD=$2
 
-test=$(./accessabilitiy-testing.sh "$URL" "$THRESHOLD")
+test=$(docker run /bin/bash -c "./accessabilitiy-testing.sh $URL $THRESHOLD")
 
 if [[ $test -eq 0 ]]; then
     echo -e "\e[32m accessability test is a success!\e[0m" 
