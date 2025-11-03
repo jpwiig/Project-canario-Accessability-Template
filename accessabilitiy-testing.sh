@@ -19,7 +19,7 @@
  fi
 
 # echo "testing file $filePath with the max number of errors of $threshold" 
-
-pa11y -T $threshold -c "./pa11y.json" $filePath >report.html --reporter html
+#pa11y --config "/pa11y-configs/pa11y.json" -T $threshold $filePath >report.html --reporter html
+pa11y -T "$threshold" --config "$(pwd)/pa11y-config/pa11y.json" --reporter html "$filePath" > report.html
 echo $? #check the exit code
 

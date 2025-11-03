@@ -4,7 +4,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 
 
 RUN npm install -g pa11y@latest pa11y-reporter-html@latest
-COPY pa11y.json /pa1.json
+COPY pa11y-config/pa11y.json pa11y-config/pa11y.json
 COPY accessabilitiy-testing.sh /accessabilitiy-testing.sh
 COPY test-script.sh /test-script.sh
 
