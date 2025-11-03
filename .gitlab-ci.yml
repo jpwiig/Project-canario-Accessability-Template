@@ -18,8 +18,8 @@ test-job:
   - ./test-script.sh nrk.no #needs to be changed to the expected outcome of the build thing
 
 
-deploy-job: 
-  stage: deploy
-  script: 
-    - echo "staging to deploy"
-    - echo "this needs to be in another repo"
+#deploy-job: 
+#  stage: deploy
+#  script: 
+#    - echo "staging to deploy"
+#    - echo "this needs to be in another repo"
