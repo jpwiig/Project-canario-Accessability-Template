@@ -17,9 +17,7 @@ test-job:
   script:
   - docker build -t pa11y:$CI_PIPELINE_ID . 
   - ./test-script.sh nrk.no #needs to be changed to the expected outcome of the build thing
-  artifacts: 
-    paths:
-      - 
+
 
 deploy-job: 
   stage: deploy
