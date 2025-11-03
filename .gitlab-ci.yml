@@ -12,8 +12,13 @@ build-job:
 
 test-job: 
   stage: test
+  image: docker:stable
+  services: docker:19.03.5-dind
   script:
-  - ./accessabilitify-testing.sh test.html
+  - ./accessabilitify-testing.sh oslomet.no #needs to be changed to the expected outcome of the build thing
+  artifacts: 
+    paths:
+      - 
 
 deploy-job: 
   stage: deploy

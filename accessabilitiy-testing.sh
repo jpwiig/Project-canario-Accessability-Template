@@ -13,12 +13,12 @@
  fi
 
  if [[ -z "$threshold" ]]; then
-# echo "running with standard threshold of 5"
+ echo "running with standard threshold of 5"
  threshold=5
  fi
 
 # echo "testing file $filePath with the max number of errors of $threshold" 
 
-pa11y $filePath "pa11y-config/pa11y-config.json" --config  -T $threshold >report.csv --reporter csv
+pa11y -T $threshold -c "./pa11y.json" $filePath >report.html --reporter html
 echo $? #check the exit code
 
