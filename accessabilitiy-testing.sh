@@ -9,7 +9,8 @@
  threshold=$2
 
  if [[ -z "$filePath" ]]; then
- #echo "fill out the file"
+  echo "fill out the file"
+  exit 1
  fi
 
  if [[ -z "$threshold" ]]; then
